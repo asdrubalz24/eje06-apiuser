@@ -2,7 +2,6 @@
  * Created by desarrollo-001 on 31/08/17.
  */
 const mongoose = require('mongoose');
-
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -19,7 +18,5 @@ const userSchema = new mongoose.Schema({
         required: true
     }
 });
-
 const userModel = mongoose.model('User', userSchema, 'users');
-
 module.exports = userModel;
